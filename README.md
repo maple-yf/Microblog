@@ -1,9 +1,9 @@
 Microblog
 =========
 
-1.Node.js权威指南中Microblog代码，node-v0.10.33 express-v4.9.0
+1.Node.js开发指南中Microblog代码，node-v0.10.33 express-v4.9.0
 
-2.《Node.js权威指南》是学习Nodej入门的一本不错的书，但是由于书出版时间较早，
+2.《Node.js开发指南》是学习Nodej入门的一本不错的书，但是由于书出版时间较早，
 Node这几年变化略大，所以书上的有些代码不适合最新版本node和express
 笔者在原来的代码上做了一些修改，以适应最新的版本。<br>
 
