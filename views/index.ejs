@@ -1,0 +1,13 @@
+<%if(!locals.user){ %>
+<div class="jumbotron">
+	<h1>欢迎来到Microblog</h1>
+	<p>Microblog是一个基于Node.js的微博系统</p>
+	<p>
+		<a href="/login" class="btn btn-info btn-large">登录</a>
+		<a href="/reg" class="btn btn-large">立即注册</a>
+	</p>
+</div>
+<%} else{ %>
+<%-partial('say')  %>
+<%}  %>
+<%- partial('posts', {posts:posts}) %> 

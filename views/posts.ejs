@@ -1,0 +1,22 @@
+<% posts.forEach(function(post, index) {
+	if (index % 3 == 0) { %>
+	<div class="row">
+		<%} %>
+		<style>
+			.col-md-4 p,.col-md-4 h2{
+				padding-left: 20%;
+			}			
+		</style>
+		<div class="col-md-4">
+			<h2><a href="/u/<%= post.user %>"><%= post.user %></a> 说</h2>
+			<p><small><%= post.time.getFullYear() +'.'+ (post.time.getMonth()+1)+'.' + post.time.getDate() %> &nbsp&nbsp|&nbsp
+			<%=post.time.getHours()+':'+post.time.getMinutes()+':'+post.time.getSeconds() %></small></p>
+			<p><strong><%= post.post %></strong></p>
+		</div>
+		<% if (index % 3 == 2) { %>
+	</div><!-- end row -->
+	<% } %>
+	<%}) %>
+	<% if (posts.length % 3 != 0) { %>
+</div><!-- end row -->
+<%} %>
